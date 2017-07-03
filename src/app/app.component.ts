@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { I18nService } from './shared';
 
 
+import '../style/app.scss';
+
 @Component({
   selector: 'my-project-app', // <my-app></my-app>
   templateUrl: './app.component.html',
