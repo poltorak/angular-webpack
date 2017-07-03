@@ -1,8 +1,34 @@
-// styles in src/style directory are applied to the whole page
+@import "variables";
+@import "colors";
+@import "reset";
+
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+@import "base/mixins";
+@import "base/buttons";
+@import "base/typography";
+@import "base/grid";
+@import "base/icons";
+@import "base/utils";
+@import "base/inputs";
+
+@import "components/pagination";
+@import "components/table";
+@import "components/product";
+@import "components/material-dialog";
+@import "components/topbar";
+@import "components/chart";
+@import "components/selectbox";
+
 body {
-    background: #0147A7;
-    color: #fff;
+  font-weight: 600;
+  background: $gallery;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-a {
-    color: #03A9F4;
+
+.main-container {
+  float: left;
+  width: calc(100% - #{$aside-width});
+  height: calc(100vh - #{$topbar-height});
+  padding: 10px;
 }

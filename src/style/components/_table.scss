@@ -1,0 +1,85 @@
+@import "../colors";
+@import "../variables";
+
+table {
+  width: 100%;
+
+  th, td {
+    border: 1px solid $alto;
+  }
+
+  th {
+    background: $white;
+    color: $mirage;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+    height: 36px;
+  }
+
+  td {
+    padding: 10px 7px;
+  }
+
+  .action {
+    border: none;
+    background: none;
+    width: $action-column;
+  }
+
+  .no-border-top {
+    border-top: none;
+  }
+  .no-border-bottom {
+    border-bottom: none;
+  }
+}
+
+tfoot {
+  .ico {
+    margin: 0 auto;
+  }
+
+  tr:last-child td {
+    padding: 0;
+  }
+}
+
+.library-table {
+  padding-left: 50px;
+  height: 100%;
+
+  .library-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid $alto;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 -10px 10px;
+  }
+
+  td {
+    padding: 0 10px 10px 10px;
+  }
+
+  .btn-library {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.blank-row {
+  height: 100%;
+}
+
+.remove-column-cell {
+  background-color: $bay-of-many;
+  height: 51px;
+}

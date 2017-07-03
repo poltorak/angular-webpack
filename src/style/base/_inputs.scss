@@ -1,0 +1,53 @@
+::-webkit-datetime-edit { 
+  padding: 0; 
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+::-webkit-calendar-picker-indicator { display: none; }
+
+input:focus, select:focus {
+  outline: none;
+}
+
+input {
+  background: $william;
+  display: inline-block;
+}
+::placeholder {
+  color: $hit-gray;
+}
+::-webkit-input-placeholder {
+  color: $hit-gray;
+}
+
+.input-primary {
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+  height: 66px;
+  line-height: 66px;
+  padding: 25px;
+  font-size: 18px;
+  background-color: $wild-sand;
+  border: 1px solid $alto;
+  border-radius: 5px;
+  color: $mirage;
+  text-align: center;
+  &.error {
+    border-color: $flush-mahogany;
+  }
+}
+
+.input-search {
+  @include background-icon('/img/magnifying-glass-ico.svg');
+  height: 57px;
+  padding: 0 30px;
+  background-size: 33px;
+  background-position-x: calc(100% - 28px);
+  font-size: 18px;
+  background-color: $wild-sand;
+  border-radius: 28px;
+  border: 1px solid $alto;
+}
