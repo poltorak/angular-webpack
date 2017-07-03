@@ -110,7 +110,6 @@
     "directive-class-suffix": true,
     "pipe-naming": [
       true,
-      "camelCase",
       "my-project"
     ],
     "no-attribute-parameter-decorator": true,

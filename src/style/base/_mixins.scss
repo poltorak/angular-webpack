@@ -7,20 +7,7 @@
   height: $size;
   border-radius: $size/2;
 }
-@mixin pseudoelement {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-}
-@mixin background-icon($icon: null) {
-  @if $icon {
-    background-image: url(#{$icon});
-  }
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 @mixin center-x {
   left: 50%;
   transform: translateX(-50%);
@@ -33,39 +20,4 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-}
-
-@mixin appear-direction-animation($direction: 'right', $duration: 200ms, $easing-function: ease-out) {
-  @keyframes appear-to-#{$direction} {
-    0% {
-      opacity: 0;
-      @if $direction == 'right' {
-        transform: translateX(-10%);
-      }
-      @if $direction == 'left' {
-        transform: translateX(10%);
-      }
-    }
-    50% {
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 1;
-    }
-  }  
-  animation: appear-to-#{$direction} $duration $easing-function;
-}
-
-@mixin list-item {
-  border-bottom: 1px solid $alto;
-  cursor: pointer;
-  position: relative;
-  background-color: $white;
-  &:nth-of-type(odd) {
-    background-color: $wild-sand;
-  }
-  &.selected {
-    background-color: $william;
-    color: $white;
-  }
 }

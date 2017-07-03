@@ -2,32 +2,3 @@
 [hidden] {
   display: none !important;
 }
-
-.price::first-letter {
-  padding-right: 6px;
-}
-
-.section-header {
-  background: $white;
-  border: 1px solid $alto;
-  padding: 32px 20px;
-  text-transform: uppercase;
-}
-
-
-.error-block {
-  font-size: 18px;
-  color: $flush-mahogany;
-  margin-bottom: 25px;
-  font-weight: 400;
-}
-
-.no-results {
-  display: flex;
-  padding: 80px;
-  text-align: center;
-  justify-content: center;
-  color: $hit-gray;
-  font-weight: 400;
-  font-size: 20px;
-}

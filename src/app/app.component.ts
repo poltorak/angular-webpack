@@ -3,7 +3,7 @@ import { I18nService } from './shared';
 
 
 @Component({
-  selector: 'my-app', // <my-app></my-app>
+  selector: 'my-project-app', // <my-app></my-app>
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

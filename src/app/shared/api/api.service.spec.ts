@@ -42,8 +42,6 @@ describe('Api Service', () => {
     });
   });
 
-  
-
   describe('#updateAttributesTemplate', () => {
     it('returns a Promise',
       async(inject([ApiService, MockBackend], (api, backend) => {
@@ -54,7 +52,6 @@ describe('Api Service', () => {
         });
 
         let promise = apiService.sayHello('John');
-        console.log(promise);
         expect(promise instanceof Promise).toBeTruthy();
         promise.then((data) => {
           expect(data).toBeTruthy();

@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ApiService, I18nService, I18nPipe } from './shared';
+import { TRANSLATION_PROVIDERS, ApiService, I18nService, I18nPipe } from './shared';
 import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
@@ -26,7 +26,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     I18nPipe
   ],
   providers: [
-    ApiService, I18nService
+    TRANSLATION_PROVIDERS, ApiService, I18nService
   ],
   bootstrap: [AppComponent]
 })
