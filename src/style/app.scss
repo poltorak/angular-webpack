@@ -1,8 +1,16 @@
-// styles in src/style directory are applied to the whole page
+@import "variables";
+@import "colors";
+@import "reset";
+
+@import "base/mixins";
+@import "base/buttons";
+@import "base/typography";
+@import "base/grid";
+@import "base/utils";
+@import "base/forms";
+
 body {
-    background: #0147A7;
-    color: #fff;
-}
-a {
-    color: #03A9F4;
+  font-weight: 600;
+  background: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }

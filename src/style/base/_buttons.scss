@@ -1,0 +1,32 @@
+@import "../colors";
+@import "../base/mixins";
+
+@mixin button-base($radius, $height, $bg-color, $color, $font-size: 20px) {
+  border: 0;
+  border-radius: $radius;
+  color: $color;
+  display: inline-block;
+  font-size: $font-size;
+  height: $height;
+  line-height: $height;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:focus {
+    outline: none;
+  }
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+  @if type-of($bg-color) == color {
+    background-color: $bg-color;
+    &:active {
+      background-color: darken($bg-color, 10%);
+    }
+  }
+  @else {
+    background: $bg-color;    
+  }
+}

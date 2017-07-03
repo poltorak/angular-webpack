@@ -54,7 +54,6 @@
       true,
       "check-open-brace",
       "check-catch",
-      "check-else",
       "check-whitespace"
     ],
     "quotemark": [
@@ -91,13 +90,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "my",
+      "my-project",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "my",
+      "my-project",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
@@ -111,8 +110,7 @@
     "directive-class-suffix": true,
     "pipe-naming": [
       true,
-      "camelCase",
-      "my"
+      "my-project"
     ],
     "no-attribute-parameter-decorator": true,
     "no-forward-ref": true,

@@ -1,0 +1,23 @@
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: $size/2;
+}
+
+@mixin center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin center-xy {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
